@@ -1,0 +1,14 @@
+{
+  "name": "snap_make-remote-work",
+  "version": "1.0.0",
+  "description": "This is s repo for Front-end Mentor Challenge, which was chosen to improve CSS and JS skills and practice the creation of drop-down menus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Violet",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.30.0"
+  }
+}
