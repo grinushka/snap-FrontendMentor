@@ -1,9 +1,303 @@
 @import url(https://fonts.google.com/specimen/Epilogue);
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Epilogue', sans-serif;
 }
 
+body {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* Reusable classes */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+
+.container {
+  width: 95%;
+  max-width: 1300px;
+  max-height: 100vh;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  z-index: 999;
+}
+
+.nav {
+  visibility: hidden;
+  position: absolute;
+  top: -1rem;
+  right: -5%;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 65vw;
+  color: rgb(104, 104, 104);
+  padding-top: 4.2rem;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: rgb(34, 34, 34);
+}
+
+.nav-item {
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+}
+
+#menu-toggler {
+  display: none;
+  /* z-index: 888; */
+}
+
+#menu-toggler:checked+.nav {
+  visibility: visible;
+}
+
+.login {
+  text-align: center;
+}
+
+.register {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+  border: 1px solid rgb(104, 104, 104);
+  border-radius: 10px;
+}
+
+.register:hover {
+  background-color: #8d4cb675;
+  color: rgb(49, 49, 49);
+  border-color: white;
+}
+
+#features-toggler,
+#career-toggler {
+  display: none;
+}
+
+.features,
+.career {
+  display: inline;
+  margin-left: 0.6rem;
+}
+
+.features-items,
+.career-items {
+  display: none;
+  padding: 1rem 0 0rem 1rem;
+}
+
+.career-items li+li {
+  margin-top: 1.2rem;
+}
+
+.features-items li+li {
+  margin-top: 1rem;
+}
+
+#features-toggler:checked+.features-items {
+  display: block;
+}
+
+#career-toggler:checked+.career-items {
+  display: block;
+}
+
+.main {
+  padding: 1.5rem 0;
+}
+
+.main-photo {
+  max-width: 27rem;
+  margin: 0 auto;
+}
+
+.img-desktop {
+  display: none;
+}
+
+.heading {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.paragraph {
+  text-align: center;
+  color: rgb(68, 68, 68);
+  padding: 1.6rem 1.5rem;
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: rgb(26, 26, 26);
+  font-size: 1.1rem;
+  color: white;
+  padding: 1em 2em;
+  border-radius: 15px;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;
+  padding: 3rem 0.3rem 2rem;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  font-style: italic;
+}
+
+
+
+
+@media (min-width: 920px) {
+
+  .menu {
+    display: none;
+  }
+
+  .header {
+    justify-content: flex-start;
+  }
+
+  .nav {
+    visibility: visible;
+    top: 0;
+    right: 0;
+    height: auto;
+    position: relative;
+    width: auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .logo {
+    width: 8rem;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .login {
+    margin-left: auto;
+  }
+
+  .main {
+    margin-left: 8rem;
+    display: flex;
+    gap: 10%;
+  }
+
+  .main-photo {
+    max-height: 30rem;
+    margin: 0;
+    order: 2;
+  }
+
+  .img-desktop {
+    display: block;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .heading {
+    font-size: 4rem;
+    text-align: left;
+    margin-top: 10%;
+  }
+
+  .paragraph {
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 0;
+    padding: 2rem 0rem 3rem 0;
+  }
+
+  .btn-wrapper {
+    justify-content: flex-start;
+  }
+
+  .clients {
+    justify-content: flex-start;
+    gap: 2.2rem;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .features-items,
+  .career-items {
+  position: absolute;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 20px 10px #6e6e6e33;
+  top: 3rem;
+  min-width: max-content;
+}
+
+.features-items {
+  right: 1rem;
+}
+
+.features-items img {
+  width: 17px;
+  margin-right: 0.5rem;
+}
+}

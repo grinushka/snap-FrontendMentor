@@ -1,32 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snap</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  </style>
 </head>
+
 <body>
+  <div class="container">
 
-  Features
-  Company
-  Careers
-  About
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.svg" alt="">
+      </div>
 
-  Login
-  Register
+      <label class="menu center" for="menu-toggler">
+        <img src="images/icon-menu.svg" alt="">
+      </label>
+      <input id="menu-toggler" type="checkbox" />
 
-  Make remote work
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#">Features</a>
+            <label class="features center" for="features-toggler">
+              <img src="images/icon-arrow-down.svg" alt="">
+            </label>
+            <input id="features-toggler" type="checkbox" />
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+            <ul class="features-items">
+              <li>
+                <img src="images/icon-todo.svg" alt="">
+                <a href="#">Todo List</a>
+              </li>
+              <li>
+                <img src="images/icon-calendar.svg" alt="">
+                <a href="#">Calendar</a>
+              </li>
+              <li>
+                <img src="images/icon-reminders.svg" alt="">
+                <a href="#">Reminders</a>
+              </li>
+              <li>
+                <img src="images/icon-planning.svg" alt="">
+                <a href="#">Planning</a>
+              </li>
+            </ul>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          </li>
+          <li></li>
+          <li class="nav-item">
+            <a href="#">Company</a>
+            <label class="career center" for="career-toggler">
+              <img src="images/icon-arrow-down.svg" alt="">
+            </label>
+            <input id="career-toggler" type="checkbox" />
+
+            <ul class="career-items">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#">Careers</a>
+          </li>
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item login"><a href="#">Login</a></li>
+          <li class="nav-item register"><a href="#">Register</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="main">
+      <div class="main-photo">
+        <img src="images/image-hero-desktop.png" alt="" class="img-desktop">
+        <img src="images/image-hero-mobile.png" alt="" class="img-mobile">
+
+      </div>
+      <div class="content">
+
+        <h1 class="heading">Make remote work</h1>
+
+        <p class="paragraph">Get yout team in sync, no matter your location. Streamline processes, create team rituals
+          and
+          watch
+          productivity soar.</p>
+
+        <div class="btn-wrapper">
+          <button class="btn">Learn more</button>
+        </div>
+
+        <div class="clients">
+          <div class="client"><img src="images/client-databiz.svg" alt=""></div>
+          <div class="client"><img src="images/client-audiophile.svg" alt=""></div>
+          <div class="client"><img src="images/client-meet.svg" alt=""></div>
+          <div class="client"><img src="images/client-maker.svg" alt=""></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="mentor">Frontend
+          Mentor</a>.
+        Coded by <a href="#">Violet</a>.
+      </p>
+
+    </footer>
+
   </div>
+
 </body>
+
 </html>
