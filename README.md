@@ -13,7 +13,7 @@ Users should be able to:
 
 ![Desktop preview](./desktop-preview.png)
 ![Desktop preview with drop dowm menus](./desktop-preview-2.png)
-![Mobile preview](./mobile-preview.png)
+![Mobile preview](./mobile-preview-1.png)
 
 ### Links
 
