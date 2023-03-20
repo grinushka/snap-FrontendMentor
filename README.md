@@ -11,7 +11,9 @@ Users should be able to:
 
 ### Screenshots
 
-![](./screenshot.jpg)
+![Desktop preview](./desktop-preview.png)
+![Desktop preview with drop dowm menus](./desktop-preview-2.png)
+![Mobile preview](./mobile-preview.png)
 
 ### Links
 
