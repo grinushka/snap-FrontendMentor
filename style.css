@@ -124,7 +124,7 @@ a:hover {
 .company-items {
   padding: 1rem 0 0rem 1rem;
   opacity: 0.7;
-  transition: opacity 100ms ease-in-out;
+  transition: opacity 50ms ease-in-out;
   position: absolute;
   transform: translateY(-500px);
 }
@@ -137,29 +137,37 @@ a:hover {
   margin-top: 1rem;
 }
 
-#features-toggler:checked+.features-items {
-  opacity: 1;
-  position: relative;
-  transform: translateY(0);
-}
+/* Turning arrows */
 
-/* TODO */
-
-/* .arrow {
+.arrow{
   transform: rotate(0);
   transition: transform 200ms ease-in;
 }
 
-#features-toggler:checked .arrow {
+#features-toggler:checked~ * .arrow {
   transform: rotate(-180deg);
-} */
+}
+
+#company-toggler:checked~ * .arrow {
+  transform: rotate(-180deg);
+}
+
+/*  */
 
 
-#company-toggler:checked+.company-items {
+#features-toggler:checked~.features-items {
   opacity: 1;
   position: relative;
   transform: translateY(0);
 }
+
+
+#company-toggler:checked~.company-items {
+  opacity: 1;
+  position: relative;
+  transform: translateY(0);
+}
+
 
 .main {
   padding: 1.5rem 0;
@@ -313,11 +321,11 @@ a:hover {
     transform: none;
   }
 
-  #features-toggler:checked+.features-items {
+  #features-toggler:checked~.features-items {
     position: absolute;
   }
-  
-  #company-toggler:checked+.company-items {
+
+  #company-toggler:checked~.company-items {
     position: absolute;
   }
 
