@@ -139,28 +139,24 @@ a:hover {
 
 /* Turning arrows */
 
-.arrow{
+.arrow {
   transform: rotate(0);
   transition: transform 200ms ease-in;
 }
 
-#features-toggler:checked~ * .arrow {
+#features-toggler:checked~* .arrow {
   transform: rotate(-180deg);
 }
 
-#company-toggler:checked~ * .arrow {
+#company-toggler:checked~* .arrow {
   transform: rotate(-180deg);
 }
-
-/*  */
-
 
 #features-toggler:checked~.features-items {
   opacity: 1;
   position: relative;
   transform: translateY(0);
 }
-
 
 #company-toggler:checked~.company-items {
   opacity: 1;
