@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Screenshots
 
-![Desktop preview](./sreenshots/desktop-preview.png)
+![Desktop preview](./screenshots/desktop-preview.png)
 ![Desktop preview with drop dowm menus](./screenshots/desktop-preview-2.png)
 ![Mobile preview](./screenshots/mobile-preview-1.png)
 
