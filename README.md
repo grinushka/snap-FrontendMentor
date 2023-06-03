@@ -17,7 +17,6 @@ Users should be able to:
 ![Desktop preview with drop dowm menus](./screenshots/desktop-preview-2.png)
 ![Mobile preview](./screenshots/mobile-preview-1.png)
 
-## My process
 
 ### Built with
 
